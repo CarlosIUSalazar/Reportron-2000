@@ -1,0 +1,64 @@
+.target_container {
+  border: solid;
+  width:fit-content
+}
+
+.target_name_box {
+  display: flex;
+
+  background-color: lightcoral;
+  width: 150px;
+
+}
+
+.target_name_text {
+  font-size: medium;
+}
+
+.epc {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;    
+  justify-content: center; 
+}
+
+.e_container {
+  background-color: lightskyblue;
+  width: 50px;
+  height: 50px;
+}
+
+.p_container {
+  background-color: lightgoldenrodyellow;
+  width: 50px;
+  height: 50px;
+}
+
+.c_container {
+  background-color: lightgreen;
+  width: 50px;
+  height: 50px;
+}
+
+.e_letter {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: x-large;
+}
+
+.p_letter {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: x-large;
+}
+
+.c_letter {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: x-large;
+}
+
+.target_option_button {
+
+
+}
