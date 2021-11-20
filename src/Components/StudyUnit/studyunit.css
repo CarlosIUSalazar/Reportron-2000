@@ -1,6 +1,11 @@
+.target-row-container {
+  position: relative;
+  margin-left: 155px;
+
+}
+
 .target-row {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;    
-    justify-content: center; 
+    flex-wrap: nowrap;
   }

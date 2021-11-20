@@ -1,0 +1,21 @@
+.epc-panel-box{
+  display: flex;
+  background-color: lightseagreen;
+  border: solid;
+  width:150px;
+}
+
+.epc-panel-single-box-e {
+  width:50px;
+  background-color:lightskyblue;
+}
+
+.epc-panel-single-box-p {
+  width:50px;
+  background-color:lightgoldenrodyellow;
+}
+
+.epc-panel-single-box-c {
+  width:50px;
+  background-color:lightgreen;
+}

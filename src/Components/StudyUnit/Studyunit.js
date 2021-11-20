@@ -4,11 +4,13 @@ import './studyunit.css'
 
 export default function Studyunit() {
   return (
-    <div className="target-row">
-      <Target />
-      <Target />
-      <Target />
-      <Target />
+    <div className="target-row-container">
+      <div className="target-row">
+        <Target />
+        <Target />
+        <Target />
+
+      </div>
     </div>
   )
 }

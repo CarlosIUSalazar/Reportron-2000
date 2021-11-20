@@ -5,7 +5,6 @@
 
 .target_name_box {
   display: flex;
-
   background-color: lightcoral;
   width: 150px;
 
@@ -18,26 +17,26 @@
 .epc {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;    
-  justify-content: center; 
+  flex-wrap: nowrap;
+  justify-content: center;
 }
 
 .e_container {
   background-color: lightskyblue;
   width: 50px;
-  height: 50px;
+  height: 30px;
 }
 
 .p_container {
   background-color: lightgoldenrodyellow;
   width: 50px;
-  height: 50px;
+  height: 30px;
 }
 
 .c_container {
   background-color: lightgreen;
   width: 50px;
-  height: 50px;
+  height: 30px;
 }
 
 .e_letter {

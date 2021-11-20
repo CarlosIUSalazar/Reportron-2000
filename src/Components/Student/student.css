@@ -1,0 +1,16 @@
+.student-name-container {
+
+}
+
+.student-name-box {
+  background-color: lightgray;
+  border: solid;
+  width:150px;
+  height:20px;
+}
+
+.student-name-text{
+  margin-top: 2px;
+  margin-bottom: 0px;
+  font-size: medium;
+}
