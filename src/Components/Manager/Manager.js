@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './manager.css'
 
 export default function Manager({hideManagerPage, addStudentToList, addTargetToList}) {

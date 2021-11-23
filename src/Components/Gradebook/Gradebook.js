@@ -16,14 +16,25 @@ export default function Gradebook({studentList, targetList}) {
     <>
       <div className="target-boxes-container">
         <div className="target-boxes-empty-space-buffer"></div>
-        {targetList.map((value, index) => <Studyunit targetName={value}/>)}
+        {targetList.map((value, index) => (
+          <>
+          <div key={index} className="target-">
+            {<Studyunit targetName={value}/>}
+          </div>
+          </>
+        ))
+        }
       </div>
         {studentList.map((value, index) => {
         return (
           <>
-            <div className="epc-boxes-container">
+            <div key={index} className="epc-boxes-container">
               <Student studentName={value}/>
-              {targetList.map((value, index) => <EpcPanel />)}
+              {targetList.map((value, index) => (
+              <div key={index} className="epc-panel-">
+                <EpcPanel />
+              </div>
+              ))}
             </div>
           </>
         )})}
@@ -31,3 +42,10 @@ export default function Gradebook({studentList, targetList}) {
   )
 }
 
+// <div className="users">
+//       {data.map((user) => (
+//         <div className="user">{user}</div>
+//       ))}
+//     </div>
+
+//https://reactjs.org/docs/lists-and-keys.html#keys

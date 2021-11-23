@@ -1,4 +1,4 @@
-import React, { useState, useRef, useContext } from 'react';
+import React, { useState } from 'react';
 
 import './App.css';
 import Header from './Components/Header/Header'
@@ -42,3 +42,5 @@ function App() {
 }
 
 export default App;
+
+
