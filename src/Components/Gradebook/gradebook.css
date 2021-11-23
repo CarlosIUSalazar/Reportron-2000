@@ -1,3 +1,16 @@
-.student-epcpanel-container {
+.target-boxes-empty-space-buffer {
+  margin-left: 155px;
+}
+
+
+.target-boxes-container {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.epc-boxes-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }

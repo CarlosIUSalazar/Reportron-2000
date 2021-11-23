@@ -1,21 +1,25 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useContext } from 'react';
 
 import './App.css';
 import Header from './Components/Header/Header'
 import Gradebook from './Components/Gradebook/Gradebook'
 import Manager from './Components/Manager/Manager'
 
+
+// export const WordContext = React.createContext()
 function App() {
   const [onManagerPage, setOnManagerPage] = useState(true);
-  let studentList = useRef([]);
-  let targetList = useRef([]);
+
+  let [studentList, setListStudent] = useState([])
+  let [targetList, setListTarget] = useState([])
+
 
   const addStudentToList = (studentName) => {
-    studentList.current.push(studentName)
+    setListStudent(studentList => [...studentList, studentName])
   }
 
   const addTargetToList = (targetName) => {
-    targetList.current.push(targetName)
+    setListTarget(targetList => [...targetList, targetName])
   }
 
   const hideManagerPage = () => {
@@ -30,7 +34,7 @@ function App() {
       {onManagerPage ? <Manager hideManagerPage={hideManagerPage} addStudentToList={addStudentToList} addTargetToList={addTargetToList}/> :
       <>
         <Header />
-        <Gradebook studentList={studentList.current} targetList={targetList.current} />
+        <Gradebook studentList={studentList} targetList={targetList}/>
       </>
       }
     </>
